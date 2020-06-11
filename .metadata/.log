@@ -1,0 +1,144 @@
+!SESSION 2020-06-11 15:17:09.152 -----------------------------------------------
+eclipse.buildId=3.9.12.202003181024-RELEASE-e415
+java.version=1.8.0_252
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.equinox.p2.publisher 4 0 2020-06-11 15:18:54.234
+!MESSAGE An error occured while parsing advice file: basePath=D:/DEV/sts-bundle/sts-3.9.12.RELEASE/features/org.springsource.ide.eclipse.dashboard_3.9.12.202003180611-RELEASE, adviceFilePath=p2.inf.
+!STACK 0
+java.lang.IllegalStateException: bad token: instructions.install.import
+	at org.eclipse.equinox.p2.publisher.AdviceFileParser.parseInstructions(AdviceFileParser.java:362)
+	at org.eclipse.equinox.p2.publisher.AdviceFileParser.parse(AdviceFileParser.java:119)
+	at org.eclipse.equinox.p2.publisher.AdviceFileAdvice.<init>(AdviceFileAdvice.java:81)
+	at org.eclipse.equinox.p2.publisher.eclipse.FeaturesAction.createAdviceFileAdvice(FeaturesAction.java:172)
+	at org.eclipse.equinox.p2.publisher.eclipse.FeaturesAction.generateFeatureIUs(FeaturesAction.java:408)
+	at org.eclipse.equinox.p2.publisher.eclipse.FeaturesAction.perform(FeaturesAction.java:606)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.publish(RepositoryListener.java:167)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.processFeature(RepositoryListener.java:162)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.process(RepositoryListener.java:140)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.added(RepositoryListener.java:122)
+	at org.eclipse.equinox.internal.p2.extensionlocation.BundlePoolFilteredListener.added(BundlePoolFilteredListener.java:42)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.added(SiteListener.java:326)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:199)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:162)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:112)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.synchronizeRepositories(SiteListener.java:116)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.ensureInitialized(ExtensionLocationArtifactRepository.java:69)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.getProperties(ExtensionLocationArtifactRepository.java:283)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.addRepository(AbstractRepositoryManager.java:132)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:682)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.Util.getRunnableRepositories(Util.java:175)
+	at org.eclipse.equinox.internal.p2.touchpoint.eclipse.Util.getAggregatedBundleRepository(Util.java:166)
+	at org.eclipse.equinox.internal.p2.extensionlocation.Activator.getBundlePoolRepository(Activator.java:85)
+	at org.eclipse.equinox.internal.p2.extensionlocation.BundlePoolFilteredListener.<init>(BundlePoolFilteredListener.java:30)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.synchronizeRepositories(SiteListener.java:114)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationMetadataRepository.ensureInitialized(ExtensionLocationMetadataRepository.java:68)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationMetadataRepository.getProperties(ExtensionLocationMetadataRepository.java:177)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.addRepository(AbstractRepositoryManager.java:132)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.addRepository(MetadataRepositoryManager.java:40)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.createExtensionLocationMetadataRepository(Activator.java:85)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.synchronizeConfiguration(PlatformXmlListener.java:213)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.stopPoll(PlatformXmlListener.java:122)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.stopPoll(DirectoryWatcher.java:173)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:113)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchConfiguration(Activator.java:494)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1780)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2020-06-11 15:20:30.182
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-11 15:20:30.182
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@38e88e13,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a720ae3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2020-06-11 15:20:30.816
+!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2020-06-11 15:20:30.822
+!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2020-06-11 15:20:30.830
+!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-11 15:20:39.524
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\smpk3'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-11 15:21:28.902
+!MESSAGE Could not download sources for com.sangmin:board-spring-boot-starter:0.0.1-SNAPSHOT
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.sangmin:board-spring-boot-starter:jar:sources:0.0.1-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:803)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:304)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.sangmin:board-spring-boot-starter:jar:sources:0.0.1-SNAPSHOT
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-06-11 15:21:28.903
+!MESSAGE Could not resolve artifact com.sangmin:board-spring-boot-starter:jar:sources:0.0.1-SNAPSHOT
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-06-11 15:21:28.903
+!MESSAGE Missing com.sangmin:board-spring-boot-starter:jar:sources:0.0.1-SNAPSHOT
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2020-06-11 15:21:29.155
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2020-06-11 15:21:29.609
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2020-06-11 15:21:34.378
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2020-06-11 15:21:34.474
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
