@@ -1,8 +1,12 @@
 package com.sangmin;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.sangmin.service.BoardService;
+
 import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
@@ -10,40 +14,21 @@ import java.util.ArrayList;
 @RestController
 public class BoardController {
 	
-	public BoardController() {
-		System.out.println("===> BoardController 생성");
-	}
+	@Autowired
+	private BoardService boardService;
 	
 	@GetMapping("/hello")
 	public String hello(String name) {
-		return "Hello : " +name;
+		return boardService.hello(name);
 	}
 	
 	 @GetMapping("/getBoard")
 	 public BoardVO getBoard() {
-		 BoardVO board = new BoardVO();
-		 board.setSeq(1);
-		 board.setTitle("테스트 제목...");
-		 board.setWriter("테스터");
-		 board.setContent("테스트 내용입니다.....");
-		 board.setCreateDate(new Date());
-		 board.setCnt(0);
-		 return board;
+		 return boardService.getboard();
 	 }
 	 
 	 @GetMapping("/getBoardList")
 	 public List<BoardVO> getBoardVOList(){
-		 List<BoardVO> boardList = new ArrayList<BoardVO>();
-		 for(int i =1; i<=10; i++) {
-			 BoardVO board = new BoardVO();
-			 board.setSeq(i);
-			 board.setTitle("테스트 제목..."+i);
-			 board.setWriter("테스터");
-			 board.setContent(i+"번 테스트 내용입니다.....");
-			 board.setCreateDate(new Date());
-			 board.setCnt(0);
-			 boardList.add(board);
-		 }
-		 return boardList;
+		 return boardService.getBoardList();
 	 }
 }

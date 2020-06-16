@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="String result = restTemplate.getForObject(&quot;/hello?name=상민&quot;, String.class);"/>
+		<item key="selection" value="&lt;dependency&gt;"/>
 		<list key="findhistory">
+			<item value="&lt;dependency&gt;"/>
+			<item value="&#x09;&#x09;&lt;dependency&gt;"/>
 			<item value="String result = restTemplate.getForObject(&quot;/hello?name=상민&quot;, String.class);"/>
 		</list>
 	</section>
