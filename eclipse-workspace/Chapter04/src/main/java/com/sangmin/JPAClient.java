@@ -1,6 +1,7 @@
 package com.sangmin;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -29,6 +30,13 @@ public class JPAClient {
 			em.persist(board);
 			
 			//transaction commit
+			tx.commit();
+			
+			String jpql = "select b from Board b order by b.seq desc";
+			List<Board> boardList = em.createQuery(jpql,Board.class).getResultList();
+			for(Board brd : boardList) {
+				System.out.println("--->"+ brd.toString());
+			}
 			tx.commit();
 		}catch (Exception e) {
 			e.printStackTrace();
