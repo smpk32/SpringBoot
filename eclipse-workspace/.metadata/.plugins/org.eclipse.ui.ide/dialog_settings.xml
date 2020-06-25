@@ -130,6 +130,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\springboot\eclipse-workspace\BoardWeb"/>
 			<item value="D:\springboot\eclipse-workspace"/>
 			<item value="C:\Users\psm\Desktop\springboot\eclipse-workspace"/>
 		</list>

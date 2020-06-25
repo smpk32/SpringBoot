@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
-<fullyQualifiedTypeName name="org.springframework.data.domain.Sort"/>
-<fullyQualifiedTypeName name="org.springframework.data.domain.Sort.Direction"/>
-<fullyQualifiedTypeName name="org.springframework.data.querydsl.QuerydslPredicateExecutor"/>
 <fullyQualifiedTypeName name="com.sangmin.persistence.DynamicBoardRepository"/>
 <fullyQualifiedTypeName name="com.querydsl.core.BooleanBuilder"/>
 <fullyQualifiedTypeName name="com.sangmin.domain.QBoard"/>
@@ -30,21 +23,15 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.sangmin.service.BoardService"/>
 <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
-<fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
-<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
-<fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringRunner"/>
 <fullyQualifiedTypeName name="com.sangmin.persistence.BoardRepository"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="com.sangmin.domain.Board"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="com.sangmin.persistence.MemberRepository"/>
 <fullyQualifiedTypeName name="java.util.Optional"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.sangmin.service.MemberService"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.SessionAttributes"/>
-<fullyQualifiedTypeName name="com.sangmin.domain.Member"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.support.SessionStatus"/>
@@ -60,4 +47,17 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.EnableWebSecurity"/>
+<fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.builders.HttpSecurity"/>
+<fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.junit4.rules.SpringClassRule"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringRunner"/>
+<fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
+<fullyQualifiedTypeName name="org.springframework.test.annotation.Commit"/>
+<fullyQualifiedTypeName name="com.sangmin.persistence.MemberRepository"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.security.crypto.password.PasswordEncoder"/>
+<fullyQualifiedTypeName name="com.sangmin.domain.Member"/>
+<fullyQualifiedTypeName name="com.sangmin.domain.Role"/>
 </qualifiedTypeNameHistroy>
